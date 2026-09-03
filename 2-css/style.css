@@ -1,0 +1,54 @@
+/* Flex */
+.kutular {
+  border: 5px solid black;
+  padding: 10px;
+  height: 500px;
+  display: flex;
+  gap: 10px;
+  /* x eksenin hizalama */
+  justify-content: space-around;
+  /* y ekseninde hizalama */
+  align-items: center;
+}
+
+.kutu {
+  padding: 10px;
+  border: 5px solid;
+  flex: 1;
+  text-align: center;
+}
+
+/* Grid */
+.kutular-2 {
+  border: 5px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+}
+
+.kutu-2 {
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+/* Hover */
+button {
+  padding: 10px 20px;
+  margin-top: 100px;
+}
+
+button:hover {
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Ekran Boyutuna Göre Stillendirme */
+@media (max-width: 800px) {
+  .kutular-2 {
+    grid-template-columns: 1fr 1fr;
+    background: red;
+  }
+}
