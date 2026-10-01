@@ -135,5 +135,3 @@ form.addEventListener("submit", function (event) {
   // formu sıfırla
   event.target.reset();
 });
-
-//TODO: VERİTABANINDAN VERİ ÇEKME
